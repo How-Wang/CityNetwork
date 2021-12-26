@@ -345,7 +345,7 @@ if __name__ == "__main__":
     # create and init pygame
     pygame.init()
     screen = pygame.display.set_mode((int(25000/50), int(25000/50)), 0, 32)
-    pygame.display.set_caption('Howard City - Client Server model')
+    pygame.display.set_caption('Howard City - City Network model')
     clock = pygame.time.Clock()
     screen.fill((0, 0, 0))
 
