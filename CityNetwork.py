@@ -188,7 +188,7 @@ def ChangeBase(c_list):
                                     int(c_list[i].x/20), int(c_list[i].y/20)]
         # choose used algorithm
         if case == 1:
-            if(c_list[i].power < 65):
+            if(c_list[i].power < 35):
                 max_value = np.max(
                     power_map[:, int(c_list[i].x/20), int(c_list[i].y/20)], axis=0)
                 c_list[i].power = max_value
@@ -210,7 +210,7 @@ def ChangeBase(c_list):
         elif case == 4:
             max_value = np.max(
                 power_map[:, int(c_list[i].x/20), int(c_list[i].y/20)], axis=0)
-            if (max_value > 80):
+            if (max_value > 60):
                 c_list[i].power = max_value
                 c_list[i].base = chooseMax_map[int(
                     c_list[i].x/20), int(c_list[i].y/20)]
